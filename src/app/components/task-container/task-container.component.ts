@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NbsTaskService } from '../../services/nbs-task.service';
 
 @Component({
   selector: 'app-task-container',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myService: NbsTaskService) { }
+
+  isShowResulteDetails: boolean = false;
 
   ngOnInit() {
   }
 
+  showResultes(){
+    this.myService.GetDistance();
+    this.isShowResulteDetails = true;
+  }
+
 }
+

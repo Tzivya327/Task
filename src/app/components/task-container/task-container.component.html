@@ -1,1 +1,4 @@
-<p>task-container works!</p>
+
+
+<app-input-target-source *ngIf="!isShowResulteDetails" (calculateClicked)="showResultes()"></app-input-target-source>
+<app-result-details *ngIf="isShowResulteDetails" (closeClicked)="isShowResulteDetails = false"></app-result-details>

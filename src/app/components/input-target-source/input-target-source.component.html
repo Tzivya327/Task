@@ -1,1 +1,33 @@
-<p>input-target-source works!</p>
+
+<form class="input-form">
+    <mat-form-field class="pading-center">
+      <input type="text"
+             placeholder="מוצא"
+             aria-label="Number"
+             matInput
+            
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <mat-form-field class="pading-center">
+      <input type="text"
+             placeholder="יעד"
+             aria-label="Number"
+             matInput
+          
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <div class="pading-center">
+    <button class="btn-cal" (click)="calculate()" mat-raised-button>הצג את המרחק</button>
+  </div>
+  </form>
+  

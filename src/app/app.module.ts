@@ -10,6 +10,10 @@ import { PopularListComponent } from './components/popular-list/popular-list.com
 import { ResultDetailsComponent } from './components/result-details/result-details.component';
 import { TaskContainerComponent } from './components/task-container/task-container.component';
 import { InputTargetSourceComponent } from './components/input-target-source/input-target-source.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { InputTargetSourceComponent } from './components/input-target-source/inp
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

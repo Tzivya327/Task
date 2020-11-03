@@ -1,0 +1,30 @@
+.res-details{
+    background-color: black;
+}
+
+.text-details{
+    color: white;
+    margin-right: 30%;
+}
+
+.big-font{
+    font-size: 50px;
+}
+
+.orang-color{
+    color: #FFC000;
+}
+.text-container{
+    padding-top: 20%;
+    
+
+}
+.btn-end{
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: #FFC000;
+    color: white;
+    float: left;
+    margin-left: 20px;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-result-details',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultDetailsComponent implements OnInit {
 
+  @Output() closeClicked = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  close(){
+    this.closeClicked.emit();
   }
 
 }
